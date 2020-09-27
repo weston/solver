@@ -1,0 +1,28 @@
+IP stack 500
+OOP stack 500
+Pot 100
+
+OOP checks
+IP bets 40
+    IP Stack = 60
+    OOP Stack 100
+    Pot = 140
+
+OOP
+    Raise 50%
+    Call + Bet
+    Pot is now
+    180 + 90
+
+
+Check
+    Bet
+    Check
+Bet
+    Raise
+    Fold
+    Call
+Raise
+    Raise
+    Fold
+    Call
