@@ -59,7 +59,7 @@ func main() {
 		EffectiveStack: 700,
 		JamThreshold:   90,
 	}
-	root := BuildTree(input)
+	root, _ := BuildTree(input)
 	visualizeTree(root, "")
 }
 

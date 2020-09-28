@@ -20,7 +20,7 @@ func (sn StrategyNode) EffectiveStack() int {
 }
 
 // Builds a tree with no intelligent strategy suggestions
-func BuildTree(input SolverInput) StrategyNode {
+func BuildTree(input SolverInput) (StrategyNode, error) {
 	sn := StrategyNode{
 		Parent:         nil,
 		PreviousAction: nil,
@@ -40,7 +40,7 @@ func BuildTree(input SolverInput) StrategyNode {
 			input, sn, action)
 		sn.Weights[action] = input.OOPRange.Copy()
 	}
-	return sn
+	return sn, nil
 }
 
 // parent will not have Weights and actions populated
